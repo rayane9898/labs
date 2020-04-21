@@ -2,7 +2,24 @@
 
 @section('content')
 
-    @include('components.nav')
+    	<!-- Header section -->
+	<header class="header-section">
+		<div class="logo">
+			<img src="img/logo.png" alt=""><!-- Logo -->
+		</div>
+		<!-- Navigation -->
+		<div class="responsive"><i class="fa fa-bars"></i></div>
+		<nav>
+			<ul class="menu-list">
+				<li><a href="{{route('welcome')}}">Home</a></li>
+				<li class="active"><a href="{{route('services')}}">Services</a></li>
+				<li><a href="{{route('blog')}}">Blog</a></li>
+				<li><a href="{{route('contact')}}">Contact</a></li>
+				<li><a href="{{route('home')}}">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header section end -->
 
     
 	<!-- Page header -->
@@ -12,7 +29,7 @@
 			<div class="page-info">
 				<h2>Services</h2>
 				<div class="page-links">
-					<a href="#">Home</a>
+					<a href="{{route('welcome')}}">Home</a>
 					<span>Services</span>
 				</div>
 			</div>
@@ -299,7 +316,7 @@
 
 
 
-    @include('components.form');
-    @include('components.footer');
+    @include('components.form')
+    @include('components.footer')
 
 @endsection
