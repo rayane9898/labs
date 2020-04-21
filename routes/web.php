@@ -18,7 +18,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
  
 
-Route::get('/', "WelcomeController@index")->name('welcome');
-Route::get('/contact', "ContactController@index")->name('contact');
-Route::get('/services', "ServiceController@index")->name('services');
-Route::get('/blog', "BlogController@index")->name('blog');
+
+Route::resource("/", "WelcomeController");
+Route::resource("/contact", "ContactController");
+Route::resource("/services", "ServiceController");
+Route::resource("/blog", "BlogController");
+
+
+
+
+Auth::routes();
+
+Route::get('/home', function() {
+    return view('home');
+})->name('home')->middleware('auth');

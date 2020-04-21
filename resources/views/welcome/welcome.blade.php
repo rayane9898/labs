@@ -11,10 +11,10 @@
 			<div class="responsive"><i class="fa fa-bars"></i></div>
 			<nav>
 				<ul class="menu-list">
-					<li class="active"><a href="{{route('welcome')}}">Home</a></li>
-					<li><a href="{{route('services')}}">Services</a></li>
-					<li><a href="{{route('blog')}}">Blog</a></li>
-					<li><a href="{{route('contact')}}">Contact</a></li>
+					<li class="active"><a href="{{route('index')}}">Home</a></li>
+					<li><a href="{{route('services.index')}}">Services</a></li>
+					<li><a href="{{route('blog.index')}}">Blog</a></li>
+					<li><a href="{{route('contact.index')}}">Contact</a></li>
 					<li><a href="{{route('home')}}">Login</a></li>
 				</ul>
 			</nav>
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 				<div class="text-center mt60">
-					<a href="{{route('services')}}" class="site-btn">Browse</a>
+					<a href="{{route('services.index')}}" class="site-btn">Browse</a>
 				</div>
 				<!-- popup video -->
 				<div class="intro-video">
