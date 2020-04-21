@@ -1,4 +1,4 @@
-@extends('layouts.master');
+@extends('layouts.master')
 
 @section('content')
 
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 				<div class="text-center mt60">
-					<a href="" class="site-btn">Browse</a>
+					<a href="{{route('services')}}" class="site-btn">Browse</a>
 				</div>
 				<!-- popup video -->
 				<div class="intro-video">
@@ -390,7 +390,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="promo-btn-area">
-						<a href="" class="site-btn btn-2">Browse</a>
+						<a href="#form" class="js-scrollTo site-btn btn-2">Browse</a>
 					</div>
 				</div>
 			</div>

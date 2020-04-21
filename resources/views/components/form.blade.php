@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <!-- contact info -->
-            <div class="col-md-5 col-md-offset-1 contact-info col-push">
+            <div id="form" class="col-md-5 col-md-offset-1 contact-info col-push">
                 <div class="section-title left">
                     <h2>Contact us</h2>
                 </div>
